@@ -31,7 +31,7 @@ param branch string = 'master'
 param repositoryURI string = 'https://github.com/Azure-Samples/nodejs-docs-hello-world' 
 
 resource srcControls 'Microsoft.Web/sites/sourcecontrols@2020-06-01'={
-   name: '${appService.name}'
+   name: '${appService.name}/web'
    properties:{
       branch: branch
       isManualIntegration: true
